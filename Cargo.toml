@@ -1,0 +1,13 @@
+[package]
+name = "fnptr-poc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = { version = "0", features = ["std"] }
+capstone-sys = { git = "https://github.com/capstone-rust/capstone-rs" }
+anyhow = "1"
+
+[build-dependencies]
+bindgen = "0"
+cc = "1"
